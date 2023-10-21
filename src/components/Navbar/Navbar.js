@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import './Navbar.css'
 import Logo from '../../photo/Logo.svg'
 import { HiMenu } from 'react-icons/hi';
