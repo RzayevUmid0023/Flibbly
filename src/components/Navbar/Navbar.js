@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import Logo from '../../photo/Logo.svg'
+import Logo from '../../photo/Logo.png'
 import { HiMenu } from 'react-icons/hi';
 import {  AiOutlineClose } from "react-icons/ai";
  

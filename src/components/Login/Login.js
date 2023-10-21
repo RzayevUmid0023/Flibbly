@@ -22,7 +22,7 @@ function LoginPage({ showLogin, toggleShowLogin }) {
     <React.Fragment>
         <div className='Login_section'>
            
-            <div className="container" ref={container}>
+            <div className="login-container" ref={container}>
 
                 <div className="form-container sign-up">
             <div className='exit_button'><button onClick={toggleShowLogin}><BiExit className='exit-icon'/></button></div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar'
 import LoginPage from '../components/Login/Login'
+import Slide from '../components/Slide/Slide'
 
 function Home() {
 
@@ -18,6 +19,8 @@ function Home() {
      <div style={{ display: showLogin ? 'flex' : 'none' }}>
         <LoginPage showLogin={showLogin} toggleShowLogin={toggleShowLogin} />
       </div>
+      
+      <Slide />
     </>
   )
 }
