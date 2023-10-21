@@ -8,7 +8,7 @@ import {  AiOutlineClose } from "react-icons/ai";
 
 
 
-function Navbar() {
+function Navbar({ showLogin, toggleShowLogin }) {
     const [menuOpen , setMenuOpen] = useState(false)
  
   return (
@@ -24,7 +24,7 @@ function Navbar() {
                         <li>Konserler</li>
                         <li>Etkinlikler</li>
                         <li>Sinema</li>
-                        <button>Giriş Yap</button>
+                        <button onClick={toggleShowLogin}>Giriş Yap</button>
                      </ul>
 
                      <button className='Icon' onClick={()=> setMenuOpen(!menuOpen)}>
@@ -40,7 +40,7 @@ function Navbar() {
                         <li>Etkinlikler</li>
                         <li>Sinema</li>
                         <li></li>
-                        <button>Giriş Yap</button>
+                        <button onClick={toggleShowLogin}>Giriş Yap</button>
                     </ul> 
           </div>
 
