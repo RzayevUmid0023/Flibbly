@@ -98,6 +98,14 @@
 /*------------------------------------------ media query ----------------------------------*/
 
 @media screen and (max-width: 900px) {
+
+   
+
+   
+
+   .Navbar_main_left img{
+      height: 45px;}
+
     .Navbar_main_right ul{
         display: none;
     }
