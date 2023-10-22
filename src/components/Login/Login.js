@@ -19,7 +19,7 @@ function LoginPage({ showLogin, toggleShowLogin }) {
   };
 
   return (
-    <React.Fragment>
+    <>
         <div className='Login_section'>
            
             <div className="login-container" ref={container}>
@@ -77,7 +77,7 @@ function LoginPage({ showLogin, toggleShowLogin }) {
             </div>
       </div>
 
-    </React.Fragment>
+    </>
 
   );
 }
