@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar'
 import LoginPage from '../components/Login/Login'
 import Slide from '../components/Slide/Slide'
+import Concert from '../components/Concert/Concert'
 
 function Home() {
 
@@ -21,6 +22,8 @@ function Home() {
       </div>
       
       <Slide />
+      <Concert />
+
     </>
   )
 }

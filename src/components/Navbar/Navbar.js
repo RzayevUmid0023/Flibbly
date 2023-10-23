@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Navbar.module.css'; // Modülün doğru şekilde import edildiğinden emin olun
+import styles from './Navbar.module.css'; 
 import Logo from '../../photo/Logo.png';
 import { HiMenu } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
