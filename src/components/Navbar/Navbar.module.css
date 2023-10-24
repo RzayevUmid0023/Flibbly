@@ -7,7 +7,7 @@
     position: fixed;
     top: 20px;
     background-color: none;
-    z-index: 15;
+    z-index: 150;
  
     
 }
@@ -95,7 +95,7 @@
    
 }
 
-.Link{
+.a{
    color: white;
    text-decoration: none;
 }
@@ -120,62 +120,88 @@
      }
 
      .mob_navbar{
-      z-index: 2;
-      width: 300px;
-      height: auto;
-      position: fixed;
-      top: 103px;
-      right: 0px;
-      background-color: rgb(239, 231, 216);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: all 0.5s;
-      border-radius: 0px 0px 15px 15px;
-    }
+         align-items: center;
+         border-radius: 30px;
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+         position: fixed;
+         right: 10px;
+         top: 110px;
+         transition: all .5s;
+         width: 300px;
+        
+         backdrop-filter: blur(20px);
+         background-color: rgba(0,0,0,0.75);
+         box-shadow: 5px 1px 6px white;
+      }
 
 
     .mob_navbar ul{
-      display: flex;
-      flex-direction: column;
-      margin-top: 30px;
-      align-items: center
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         margin-top: 30px;
+        
       
     }
 
     .mob_navbar ul li{
-      padding:15px 10px ;
-      list-style: none;
-      font-size: 1.8rem;
-      transition: all 0.3s;
-      cursor: pointer;
-      color: rgb(99, 69, 69);
-      font-weight: 500;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            list-style: none;
+            padding: 15px 10px;
+            transition: all .3s;
+            border-bottom: 1px solid white;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 1px;
 
     }
 
+     
+
+
     .mob_navbar ul li:hover{
-      color: #ff7f00;
+      color: #ff7f00
 
     }
 
 
     .mob_navbar ul button{
-      margin-top: 20px;
-      background-color: #ff7f00;
-      border: none;
-      border-radius: 25px;
-      font-size: 1.8rem;
-      color: white;
-      padding: 10px 20px;
-       cursor: pointer;
-      transition: all 0.5s;
-      margin-bottom: 20px;
+         background-color: #fff;
+         border: none;
+         border-radius: 25px;
+         color: #ccc;
+         cursor: pointer;
+         font-size: 20px;
+         margin-bottom: 30px;
+         margin-top: 45px;
+         padding: 10px 20px;
+         transition: all .5s;
+         z-index: 2;
+          
+    }
+
+
+    .mob_navbar ul button .a{
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      color: #ff7f00;
+      z-index: 3;
+      font-weight: 500;
     }
 
     .mob_navbar ul button:hover{
       background-color: #d76d03;
+    }
+
+    .mob_navbar ul button:hover .a{
+       color: white;
     }
 
 

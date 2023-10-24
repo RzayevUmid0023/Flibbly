@@ -22,7 +22,7 @@ function Navbar({ showLogin, toggleShowLogin }) {
               <li>Konserler</li>
               <li>Etkinlikler</li>
               <li>Sinema</li>
-              <button ><Link to="/login" className={styles.Link}>Giris yap</Link></button>
+              <button ><Link to="/login" className={styles.a}>Giriş yap</Link></button>
             </ul>
 
             <button className={styles.Icon} onClick={() => setMenuOpen(!menuOpen)}>
@@ -36,9 +36,8 @@ function Navbar({ showLogin, toggleShowLogin }) {
               <li>Konserler</li>
               <li>Etkinlikler</li>
               <li>Sinema</li>
-              <li></li>
-              <button>
-                 <Link to="/login" className={styles.Link} >Giris yap</Link>
+               <button>
+                 <Link to="/login" className={styles.a} >Giriş yap</Link>
               </button>
             </ul>
           </div>
