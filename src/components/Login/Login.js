@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 import { FaGoogle, FaFacebook ,FaTwitter } from 'react-icons/fa';
 import { BiExit} from 'react-icons/bi';
 import Logo from '../../photo/Logo.svg'
@@ -27,7 +28,7 @@ function LoginPage({ showLogin, toggleShowLogin }) {
             <div className="login-container" ref={container}>
 
                   <div className="form-container sign-up ">
-                      <div className='exit_button'><button onClick={toggleShowLogin}><BiExit className='exit-icon'/></button></div>
+                      <div className='exit_button'><button ><Link to='/'><BiExit className='exit-icon'/></Link></button></div>
 
                       <form className='sign-up-form'>
                           <h1>Hesap Oluştur</h1>
@@ -48,7 +49,7 @@ function LoginPage({ showLogin, toggleShowLogin }) {
                   </div>
 
                   <div className="form-container sign-in">
-                      <div className='exit_button'><button onClick={toggleShowLogin}><BiExit className='exit-icon'/></button></div>
+                  <div className='exit_button'><button ><Link to='/'><BiExit className='exit-icon'/></Link></button></div>
 
                       <form className='sign-in-form'>
                           <img src={Logo }/>

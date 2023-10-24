@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css'; 
 import Logo from '../../photo/Logo.png';
 import { HiMenu } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
+
 
 function Navbar({ showLogin, toggleShowLogin }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +22,7 @@ function Navbar({ showLogin, toggleShowLogin }) {
               <li>Konserler</li>
               <li>Etkinlikler</li>
               <li>Sinema</li>
-              <button onClick={toggleShowLogin}>Giriş Yap</button>
+              <button ><Link to="/login" className={styles.Link}>Giris yap</Link></button>
             </ul>
 
             <button className={styles.Icon} onClick={() => setMenuOpen(!menuOpen)}>
@@ -35,11 +37,13 @@ function Navbar({ showLogin, toggleShowLogin }) {
               <li>Etkinlikler</li>
               <li>Sinema</li>
               <li></li>
-              <button onClick={toggleShowLogin}>Giriş Yap</button>
+              <button>
+                 <Link to="/login" className={styles.Link} >Giris yap</Link>
+              </button>
             </ul>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   );
 }
