@@ -34,7 +34,8 @@
     max-width: 1400px;
     height: 600px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 50px !important;
+    margin: 0px 20px;
 }
 
 .Section_header_text{
@@ -47,6 +48,7 @@
     height: auto;
     display: flex;
     flex-wrap:wrap ;
+    
      
     
 }
@@ -58,6 +60,7 @@
     margin: 2% 1.5%;
     box-shadow: -2px 1px 10px 1px rgba(0,0,0,0.5);
     overflow: hidden;
+    cursor: pointer;
 
 }
 
@@ -65,11 +68,12 @@
 .Section_ticket_photo img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 .ticket_text{
     padding: 20px ;
+    flex: 1;
 }
 
 .ticket_text h5{
@@ -101,5 +105,30 @@
     padding-top: 10px;
 
 }
+
+
+@media screen and (max-width:1300px) {
+
+  .Section_ticket{
+        width: 30%;
+        height: auto;
+        margin: 2% 1.5%;
+         
+    
+    }  
+    
+}
+
+@media screen and (max-width:750px) {
+
+    .Section_ticket{
+          width: 45%;
+          height: auto;
+          margin: 4% 2.5%;
+           
+      
+      }  
+      
+  }
 
 

@@ -32,10 +32,12 @@ function Navbar({ showLogin, toggleShowLogin }) {
 
           <div className={menuOpen ? styles.mob_navbar : styles.mob_hidden} onClick={() => setMenuOpen(false)}>
             <ul>
-              <li>Ana sayfa</li>
-              <li>Konserler</li>
-              <li>Etkinlikler</li>
-              <li>Sinema</li>
+            <li><Link to={"/ " }className={styles.li} >Anasayfa</Link></li>
+            <li><Link to={"/concert"} className={styles.li} >Konserler</Link></li>
+            <li><Link to={"/concert"} className={styles.li} >Etkinlikler</Link></li>
+            <li><Link to={"/concert"} className={styles.li} >Sinema</Link></li>
+
+               
                <button>
                  <Link to="/login" className={styles.a} >Giriş yap</Link>
               </button>
