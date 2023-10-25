@@ -100,6 +100,18 @@
    text-decoration: none;
 }
 
+.ullink{
+   text-decoration: none;
+   color: white;
+   transition: all 0.4s;
+}
+
+.ullink:hover{
+   color: #ff7f00;
+
+}
+
+
 /*------------------------------------------ media query ----------------------------------*/
 
 @media screen and (max-width: 900px) {
@@ -133,7 +145,7 @@
          width: 300px;
         
          backdrop-filter: blur(20px);
-         background-color: rgba(0,0,0,0.75);
+        
          box-shadow: 5px 1px 6px white;
       }
 

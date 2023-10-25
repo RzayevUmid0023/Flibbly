@@ -18,8 +18,8 @@ function Navbar({ showLogin, toggleShowLogin }) {
           </div>
           <div className={styles.Navbar_main_right}>
             <ul>
-              <li>Ana sayfa</li>
-              <li>Konserler</li>
+              <li><Link to={"/ "} className={styles.ullink}>Anasayfa</Link></li>
+              <li><Link to={"/concert"} className={styles.ullink}>Konserler</Link></li>
               <li>Etkinlikler</li>
               <li>Sinema</li>
               <button ><Link to="/login" className={styles.a}>Giriş yap</Link></button>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+.Section{
+    width: 100%;
+    height: auto;
+     font-family: 'Poppins', sans-serif;
+}
+
+.Banner{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+ }
+
+.Banner_video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+    
+   position: absolute;
+}
+
+.Banner span{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+
+.Ticket{
+    max-width: 1400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.Section_header_text{
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+.Section_tickets{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap ;
+     
+    
+}
+
+.Section_ticket{
+    width: 17%;
+    height: 500px;
+    border-radius:20px ;
+    margin: 2% 1.5%;
+    box-shadow: -2px 1px 10px 1px rgba(0,0,0,0.5);
+    overflow: hidden;
+
+}
+
+
+.Section_ticket_photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket_text{
+    padding: 20px ;
+}
+
+.ticket_text h5{
+    font-weight: 400;
+    font-size: 15px;
+    color: gray;
+    padding: 3px;
+
+}
+
+.ticket_text h6{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 3px;
+
+}
+
+.ticket_text h4{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 3px;
+
+}
+
+.ticket_text h3{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 3px;
+    padding-top: 10px;
+
+}
+
+
