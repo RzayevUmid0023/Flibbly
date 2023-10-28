@@ -1,0 +1,235 @@
+.Navbar_section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    background-color: none;
+    z-index: 150;
+ 
+    
+}
+
+.Navbar_main{
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;  
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.34);
+    padding: 0px 40px;
+    backdrop-filter: blur(8px);
+    
+
+}
+
+ 
+
+.Navbar_main_left img{
+    height: 60px;
+    cursor: pointer;
+ }
+
+ .Navbar_main_right .Icon{
+    display: none;
+    font-size: 2.8rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #ff7f00;
+    background: none;
+    border: none;
+    z-index: 3;
+ 
+ }
+
+ .Navbar_main_right .Icon:hover{
+   color: #d76d03;
+   scale: 1.05;
+
+ }
+
+
+ .Navbar_main_right ul{
+    display: flex;
+ }
+
+ .Navbar_main_right ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+ }
+
+ .Navbar_main_right ul li:hover{
+    color: #ff7f00;
+ }
+
+ .Navbar_main_right ul button{
+    background-color: #ff7f00;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+ }
+
+ .Navbar_main_right ul button:hover{
+        background-color: #d76d03;
+}
+
+
+.mob_hidden{
+   display: none;
+   
+}
+
+.a{
+   color: white;
+   text-decoration: none;
+}
+
+.ullink{
+   text-decoration: none;
+   color: white;
+   transition: all 0.4s;
+}
+
+.ullink:hover{
+   color: #ff7f00;
+
+}
+
+
+/*------------------------------------------ media query ----------------------------------*/
+
+@media screen and (max-width: 900px) {
+
+   
+
+   
+
+   .Navbar_main_left img{
+      height: 45px;}
+
+    .Navbar_main_right ul{
+        display: none;
+    }
+
+    .Navbar_main_right .Icon{
+        display: block;
+     }
+
+     .mob_navbar{
+         align-items: center;
+         border-radius: 30px;
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         justify-content: center;
+         position: fixed;
+         right: 10px;
+         top: 110px;
+         transition: all .5s;
+         width: 300px;
+        
+         backdrop-filter: blur(20px);
+        
+         box-shadow: 5px 1px 6px white;
+      }
+
+
+    .mob_navbar ul{
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         margin-top: 30px;
+        
+      
+    }
+
+    .mob_navbar ul li{
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            list-style: none;
+            padding: 15px 10px;
+            transition: all .3s;
+            border-bottom: 1px solid white;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 1px;
+
+    }
+
+    .li{
+      text-decoration: none;
+      color: white;
+      transition: all 0.4s;
+    }
+
+    .li:hover{
+      color: #ff7f00
+      
+    }
+
+     
+
+
+    .mob_navbar ul li:hover{
+      color: #ff7f00
+
+    }
+    
+
+
+    .mob_navbar ul button{
+         background-color: #fff;
+         border: none;
+         border-radius: 25px;
+         color: #ccc;
+         cursor: pointer;
+         font-size: 20px;
+         margin-bottom: 30px;
+         margin-top: 45px;
+         padding: 10px 20px;
+         transition: all .5s;
+         z-index: 2;
+          
+    }
+
+
+    .mob_navbar ul button .a{
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      color: #ff7f00;
+      z-index: 3;
+      font-weight: 500;
+    }
+
+    .mob_navbar ul button:hover{
+      background-color: #d76d03;
+    }
+
+    .mob_navbar ul button:hover .a{
+       color: white;
+    }
+
+
+
+    
+}
+

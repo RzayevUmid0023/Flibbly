@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import Navbar from '../components/Navbar/Navbar'
- import Slide from '../components/Slide/Slide'
-import Concert from '../components/Concert/Concert'
+import Navbar from '../components/Home page components/Navbar/Navbar'
+ import Slide from '../components/Home page components/Slide/Slide'
+import Concert from '../components/Home page components/Concert/Concert'
 
 function Home() {
 

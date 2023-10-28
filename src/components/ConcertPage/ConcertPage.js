@@ -1,9 +1,9 @@
+// Birinci kod
 import React from 'react'
 import styles from './ConcertPage.module.css'
 import Banner from '../../photo/Consertpage/Bannervideo.mp4'
 import tickets from './tickets'
-
-
+import { Link } from 'react-router-dom'
 
 function ConcertPage() {
   return (
@@ -11,7 +11,7 @@ function ConcertPage() {
         <div className={styles.Section}>
 
             <div className={styles.Banner}>
-                <video src={ Banner }  className={styles.Banner_video} autoPlay muted loop={false}/>
+                <video src={ Banner }  className={styles.Banner_video} autoPlay muted loop={true}/>
                 <span></span>
             </div>
 
@@ -21,7 +21,8 @@ function ConcertPage() {
                     <div className={styles.Section_tickets}>
                         
                         {tickets.map(ticket => (
-                          <div className={styles.Section_ticket}>
+                           <Link to ={"/consert-about" } state= {ticket} className={styles.Section_ticket}>
+                           
                             <div className={styles.Section_ticket_photo}>
                                 <img src={ticket.photo}/>
                                 <div className={styles.ticket_text}>
@@ -31,7 +32,8 @@ function ConcertPage() {
                                     <h3>{ticket.date}</h3>
                                 </div>
                             </div>
-                          </div>
+                           
+                          </Link>
                         ))}
                     </div>
 
