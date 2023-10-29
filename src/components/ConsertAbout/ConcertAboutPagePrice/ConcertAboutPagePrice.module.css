@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+
+.price h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.price{
+    width: 100;
+    padding-top: 100px;
+    background-color: #f3f5f8;
+    
+
+}
+
+.price_main{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 20px;
+     
+    
+
+}
+
+.header_text h1{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.price_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px; 
+    width: 100%;
+    border-radius: 20px;
+    border: 1p solid gray;
+    background-color: white;
+    padding: 40px;
+    
+}
+
+/*------------------------- Kutunun Sol tarafi -------------------------*/
+
+.price_box_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+ .price_box_city{
+    font-size: 33px;
+    font-weight: 600;
+ }
+
+ .ticket_name{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px 0px;
+ }
+
+
+
+
+
+
+
+
+.left_bottom{
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+
+.mini_date_box{
+    display: flex;
+    border: 1px solid rgb(207, 190, 190);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0px 15px;
+    text-align: center  ;
+}
+
+.mini_month{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mini_day{
+    
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+.big_date_box{
+    padding: 0px 20px;
+}
+
+
+.big_date{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.big_location{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+/*----------------------------- Kutunun Sag tarafi --------------------------*/
+
+
+.price_box_right{
+    margin-top: 150px;
+}
+
+.ticket_price{
+    font-size: 15px;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.buy_button{
+    background-color: #3dab5d;
+    padding: 10px 70px;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.buy_button:hover{
+    background-color:#2b9f4c ;
+    
+}
+
+
+
+@media screen and (max-width:750px){
+    .price_box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price_box_left{
+        text-align: center;
+    }
+
+    
+    .left_bottom{
+        padding: 30px 10px;
+    }    
+    
+
+
+    .price_box_right{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width:550px){
+    .mini_date_box{
+        display: none;
+    }
+}

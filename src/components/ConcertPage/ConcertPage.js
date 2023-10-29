@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from './ConcertPage.module.css'
 import Banner from '../../photo/Consertpage/Bannervideo.mp4'
-import tickets from './tickets'
+import tickets from '../../tickets'
 import { Link } from 'react-router-dom'
 
 function ConcertPage() {

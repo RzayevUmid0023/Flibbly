@@ -1,7 +1,7 @@
- 
+
 import React from 'react'
-import styles from './ConcertPageBanner.module.css'
- import { Link, useLocation } from 'react-router-dom' 
+import styles from './ConcertAboutPageBanner.module.css'
+import { Link, useLocation } from 'react-router-dom' 
 
 function ConcertPageBanner() {
    const location = useLocation();
