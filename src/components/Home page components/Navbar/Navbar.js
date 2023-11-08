@@ -21,7 +21,7 @@ function Navbar({ showLogin, toggleShowLogin }) {
               <li><Link to={"/ "} className={styles.ullink}>Anasayfa</Link></li>
               <li><Link to={"/concert"} className={styles.ullink}>Konserler</Link></li>
               <li>Etkinlikler</li>
-              <li>Sinema</li>
+              <li>Haritalar</li>
               <button ><Link to="/login" className={styles.a}>Giriş yap</Link></button>
             </ul>
 
